@@ -5,4 +5,4 @@ const CONFIG = require(path.resolve(CONST.ENGINE,"constants/config"))
 
 const engine = new Engine();
 engine.initApplication();
-engine.listen(CONFIG.CONFIG_PORT_LOCAL);
+engine.listen(process.env.PORT || CONFIG.CONFIG_PORT_LOCAL);
