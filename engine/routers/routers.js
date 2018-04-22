@@ -1,0 +1,1 @@
+const routers = [{"alias":"/","mapping":{"main":"()=><Home/>"},"exact":true},{"alias":"/test","mapping":{"main":"()=><Test/>"},"exact":false}];exports default routes;
