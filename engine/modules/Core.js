@@ -7,8 +7,6 @@ class Core{
 	constructor(){
 		LOG.debug("[ENG][CORE]","Create constructor")
 		this.SocketIO = null;
-		this.initCoreApplication();
-		
 	}
 	initCoreApplication(){
 		if(CONFIG.CONFIG_SOCKETIO){

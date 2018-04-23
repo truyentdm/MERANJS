@@ -11,6 +11,7 @@ class System extends Core{
 		this.app = this.express();
 		this.http = require("http");
 		this.server = null;
+		this.initCoreApplication();
 		this.createServerListenIO();
 		this.log("[ENG][SYS]","System create")
 	}
