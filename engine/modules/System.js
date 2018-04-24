@@ -11,7 +11,7 @@ class System extends Core{
 		this.app = this.express();
 		this.http = require("http");
 		this.server = null;
-		this.initCoreApplication();
+		this.createSocketIO();
 		this.createServerListenIO();
 		this.log("[ENG][SYS]","System create")
 	}
@@ -56,7 +56,8 @@ class System extends Core{
 					const createClass = new loadClass[nameClass]();
 					createClass.initVariant(handler)
 					if(CONFIG.CONFIG_SOCKETIO == true){
-						createClass.SocketIO.initSocketIO(handler)
+						createClass.createSocketIO(this.SocketIO);
+						createClass.SocketIO.initSocketIO(handler);
 					}
 					const action = this.getAction(mapping);
 					createClass[action]()

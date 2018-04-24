@@ -8,9 +8,14 @@ class Core{
 		LOG.debug("[ENG][CORE]","Create constructor")
 		this.SocketIO = null;
 	}
-	initCoreApplication(){
+	createSocketIO(_SocketIO){
 		if(CONFIG.CONFIG_SOCKETIO){
-			this.SocketIO = new SocketIO();
+			if(_SocketIO != undefined){
+				this.SocketIO = _SocketIO;
+			}else{
+				this.SocketIO = new SocketIO();
+			}
+			
 		}
 	}
 	///////////////////////////////////
