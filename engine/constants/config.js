@@ -16,6 +16,9 @@ module.exports.SYSTEM_SERVER_MAPPING 		= config.server.map.mapping;
 module.exports.SYSTEM_SERVER_PATH	 		= config.server.map.path;
 module.exports.SYSTEM_SERVER_METHOD	 		= config.server.map.method;
 module.exports.SYSTEM_SERVICE_LOCAL_URL		= config.service.local.url;
+module.exports.SYSTEM_CONFIG_DATABASE_USE	= config.database.use;
+module.exports.SYSTEM_CONFIG_DATABASE_ALIAS	= config.database.alias;
+module.exports.SYSTEM_CONFIG_DATABASE_CONFIG= config.database.config;
 ///////////////////////////////////////
 //			HARD CODE				//
 /////////////////////////////////////

@@ -11,12 +11,12 @@
 		},
 		{
 			"alias": "/api",
-			"mapping": "server>modules>controllers>home>index.indexHome",
+			"mapping": "server>modules>home>controllers>index.indexHome",
 			"method": "GET"
 		},
 		{
 			"alias": "/home",
-			"mapping": "server>modules>controllers>home>index.indexHome",
+			"mapping": "server>modules>home>controllers>index.indexHome",
 			"method": "GET"
 		}
 	]

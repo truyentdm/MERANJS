@@ -24,6 +24,11 @@ const config = {
 			"exact" : false
 		}
 	},
+	database: {
+		use: "mongodb", // string or function
+		alias: "mongodb",
+		config: {url: "mongodb://127.0.0.1:27017/",database: "englishstd"} // MySQL : {hostname:'',username: '', password: '', database: ''}
+	},
 	middle: (appEngine,expressModel)=>{
 		appEngine.set("view engine","html");
 		appEngine.engine("html",function(path,option,callback){
